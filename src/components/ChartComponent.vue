@@ -42,8 +42,8 @@
 <script>
     import Chart from 'chart.js';
     import $ from 'jquery'
-    import {legendPositions, colors} from "../common/chartUtils";
-    import {createRandomChart, randomData, showValue, changeLegendPosition, baseDataToChartConfig} from '../common/chartUtils';
+    import {legendPositions} from "../common/chartUtils";
+    import {randomData, showValue, changeLegendPosition, baseDataToChartConfig} from '../common/chartUtils';
 
     // const i18n = new VueI18n({
     //     locale: 'zh',

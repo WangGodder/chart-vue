@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <!--<HelloWorld msg="This is Test" msg1="test" name="teset2"></HelloWorld>-->
+  <div>
     <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -44,14 +42,11 @@
       <chart-component v-if="this.chart_type.pie" ref="pieChart" name="pieChart" v-bind:show="true" type="pie" v-bind:data="base_data"></chart-component>
       <chart-component v-if="this.chart_type.doughnut" ref="doughnutChart" name="doughnutChart" v-bind:show="true" type="doughnut" v-bind:data="base_data"></chart-component>
     </div>
-    <!--<HelloWorld msg="Welcome to Your Vue.js App" msg1="" name="123"/>-->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import ChartComponent from './components/ChartComponent.vue'
-import HelloI18n from "./components/HelloI18n";
 import vi18n from './i18n';
 import $ from 'jquery'
 import {chartTypes} from "./common/chartUtils";
@@ -67,12 +62,14 @@ locales.keys().forEach(key => {
   }
 });
 
+const application = require('../static/application');
+console.log(application.base_data_url);
+
 // console.log(languages);
 
 export default {
   name: 'app',
   components: {
-    HelloI18n,
     // HelloWorld,
     ChartComponent
   },
@@ -169,4 +166,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+  #chartContainer {
+    margin-top: 4%;
+  }
 </style>
