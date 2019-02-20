@@ -45,14 +45,6 @@
     import {legendPositions} from "../common/chartUtils";
     import {randomData, showValue, changeLegendPosition, baseDataToChartConfig} from '../common/chartUtils';
 
-    // const i18n = new VueI18n({
-    //     locale: 'zh',
-    //     messages: {
-    //         zh: require('../common/i18n/chart/chart-zh'),
-    //         en: require('../common/i18n/chart/chart-en')
-    //     }
-    // })
-
     export default {
         name: "ChartComponent",
         // components: [i18n],
@@ -113,9 +105,6 @@
             change_legend_position: function () {
                 changeLegendPosition(this.canvasChart, this.current_legend_position);
             },
-            // change_legend_position: function (position) {
-            //     changeLegendPosition(this.canvasChart, position);
-            // },
              enlarge: function () {
                  $('#' + this.name).width($('#' + this.name).width() +  $('#' + this.name).width() / 0.4 * 0.05);
                  // $('#' + this.name).width(40 + 1 + '%')

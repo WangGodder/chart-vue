@@ -1,0 +1,20 @@
+{
+  "message": "hello i18n !!",
+  "language": "English",
+  "choose_chart_type": "choose chart type",
+  "chart_types": ["line", "bar", "radar", "pie", "doughnut"],
+  "choose_all_chart_type": "choose all chart type",
+  "clear_all_chart": "clear all chart",
+  "choose_language": "choose language",
+  "enlarge_all_chart": "enlarge all chart",
+  "shrink_all_chart": "shrink all chart",
+  "chart": {
+    "change_legend_position": "change legend position",
+    "legend_position": ["top", "right", "bottom", "left", "hide"],
+    "show_value": "show value",
+    "hide_value": "hide value",
+    "enlarge": "enlarge chart",
+    "shrink": "shrink chart",
+    "change_color": "change color"
+  }
+}

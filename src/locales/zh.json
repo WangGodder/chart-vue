@@ -1,0 +1,20 @@
+{
+  "message": "你好 i18n !!",
+  "language": "中文",
+  "choose_chart_type": "选择图表类型",
+  "chart_types": ["折线图", "柱状图", "雷达图", "饼图", "空心饼图"],
+  "choose_all_chart_type": "选择全部图表类型",
+  "clear_all_chart": "清空全部图表",
+  "choose_language": "选择语言",
+  "enlarge_all_chart": "扩大所有图表",
+  "shrink_all_chart": "缩小所有图表",
+  "chart": {
+    "change_legend_position": "更改图例位置",
+    "legend_position": ["顶部", "右侧", "底部", "左侧", "隐藏"],
+    "show_value": "显示值",
+    "hide_value": "隐藏值",
+    "enlarge": "扩大图表",
+    "shrink": "缩小图表",
+    "change_color": "更换颜色"
+  }
+}
